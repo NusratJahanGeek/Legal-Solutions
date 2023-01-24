@@ -29,3 +29,15 @@ h1, h2, h3, h4, h5, h6, .accordion-button{
     font-family: 'EB Garamond', serif !important;
     font-size: 24px;
 }
+
+
+
+@media screen and (max-width: 768px){
+    .carousel-item{
+        width: 200% !important;
+}
+.footer-mobile-legal{
+    width: 100% !important;
+}
+}
+    
