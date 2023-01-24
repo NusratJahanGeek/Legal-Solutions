@@ -5,10 +5,27 @@
 p, a, button, input{
     font-family: 'Poppins', sans-serif !important;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, .accordion-button{
     font-family: 'EB Garamond', serif;
 }
 .legal-banner{
     background-repeat: no-repeat;
     background-size: contain;
+}
+.accordion-button::after {
+    background-image: url(/images/plus-solid.svg);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/images/minus-solid.svg);
+}
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    border: 0;
+}
+.accordion-body{
+    font-family: 'Poppins', sans-serif !important;
+}
+.accordion-button{
+    font-family: 'EB Garamond', serif !important;
+    font-size: 24px;
 }
